@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% if prediction == 0 %}
+        <h2>Negative</h2>
+    {% elif prediction == 1 %}
+        <h2>Neutral</h2>
+    {% elif prediction == 2 %}
+        <h2>Positive</h2>
+    {% endif %}
+  </body>
+</html>
