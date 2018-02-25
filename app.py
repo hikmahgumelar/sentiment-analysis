@@ -28,9 +28,9 @@ def predict():
 
         data = tfidf.transform(data)
 
-        prediction = clf.predict(data)
+        my_prediction = clf.predict(data)
 
-    return render_template('result.html', prediction = prediction)
+    return render_template('result.html', prediction = my_prediction)
 
 if __name__ == '__main__':
     app.run(debug = True)
